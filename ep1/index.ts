@@ -9,6 +9,6 @@ console.log(wentToGoHome)
 
 const a :number = 7
 const b :number = 1
-console.log(a==b)
-console.log(a>b)
-console.log(a<=b)
+console.log(a === b)
+console.log(a > b)
+console.log(a <= b)
