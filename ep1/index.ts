@@ -1,11 +1,11 @@
-const firstname : string = "ปัณณวัฒน์"
+const firstName : string = "ปัณณวัฒน์"
 var y :number = 10
 y = 20
-var went_to_go_home : boolean = true
+var wentToGoHome : boolean = true
 
-console.log(firstname)
+console.log(firstName)
 console.log(y)
-console.log(went_to_go_home)
+console.log(wentToGoHome)
 
 const a :number = 7
 const b :number = 1
