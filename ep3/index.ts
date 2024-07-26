@@ -16,7 +16,7 @@ function getPi() {
 
 console.log(getPi()) //ไม่มี input แต่มี output
 
-function st(fname: string, sname: string) {
+function teach(fname: string, sname: string) {
 
     if (fname === 'mix' && sname === 'zane') {
         console.log('เริ่มสอน')
@@ -25,22 +25,31 @@ function st(fname: string, sname: string) {
     }
 }
 
-st('mix','zane')
+teach('mix','zane')
 
-function tc(fname: string, sname: string, tname:string) {
+function study(fname: string, sname: string, tname:string) {
     if ((fname === 'mix' || sname === 'zane') && tname === "forth") {
-        console.log("เริ่มสอน")
+        console.log("พร้อมเรียน")
     } else {
-        console.log("ไม่สอน")
+        console.log("ไม่พร้อมเรียน")
     }
 }
-tc("mix","zane","forth")
+study("mix","zane","forth")
 
-function sd(sex: string, hight: number, weight:number) {
-    if (sex === 'male' && hight > 170 || weight == 50 >= 110)  {
+function soldier(sex: string, hight: number, weight:number) {
+    if (sex === 'male' && ( hight > 170 || weight > 50 && weight <= 110))  {
         console.log("จับใบดำใบแดง")
     } else {
         console.log("ไม่ผ่านเกณฑ์")
     }
 }
-sd("sex","hight","weight")
+soldier("sex",170,50)
+
+function savings(age: number, salary: number, total: number) {
+    if(age> 16 && salary < 70000 && total < 500000) {
+        console.log ("รับ10000")
+    } else {
+        console.log("อด")
+    }
+}
+savings(17,20000,300000)
