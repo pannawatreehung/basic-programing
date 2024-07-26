@@ -46,7 +46,7 @@ function soldier(sex: string, hight: number, weight:number) {
 soldier("sex",170,50)
 
 function savings(age: number, salary: number, total: number) {
-    if(age> 16 && salary < 70000 && total < 500000) {
+    if(age >= 16 && salary < 70000 && total < 500000) {
         console.log ("รับ10000")
     } else {
         console.log("อด")
