@@ -25,9 +25,10 @@ function scoldingMyself(shirtSize: string) {
     } else if (shirtSize === "l") {
         console.log("หล่อเกินปุยมุ้ยย")
     } else if (shirtSize === "xl") {
-        console.log("ไออ้วน")
+        console.log("เริ่มอ้วนแล้วนะเรา")
     } else if (shirtSize === "2xl") {
         console.log("ยักษ์ละนะะ")
     }
 }
 scoldingMyself ("2xl")
+
