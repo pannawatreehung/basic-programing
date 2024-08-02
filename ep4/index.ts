@@ -32,3 +32,8 @@ function scoldingMyself(shirtSize: string) {
 }
 scoldingMyself ("2xl")
 
+function getCharByIndex(msg: string,index: number) {
+    return msg.charAt(index)
+
+}
+console.log
