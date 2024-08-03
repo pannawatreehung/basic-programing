@@ -32,24 +32,29 @@ function scoldingMyself(shirtSize: string) {
 }
 scoldingMyself ("2xl")
 
+
 function fixedDecimal(n: number, digit: number) {
     const x = n.toFixed(digit)
     return x
 }
 console.log(fixedDecimal(40.67676, 10))
 
+
 function fix(a: number) {
     return a.toLocaleString()
 }
 console.log(fix(100000))
 
+
 const str: string = "Pannawat"
 
 console.log(str.toLowerCase())
 
+
 const str: string = "Pannawat"
 
 console.log(str.toUpperCase())
+
 
 function checkStringLength(x: string) {
     console.log (x.length)
