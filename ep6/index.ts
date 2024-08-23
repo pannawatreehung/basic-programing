@@ -28,4 +28,23 @@ while (i <= 31) {
     sum = sum + i
     i++
 }
-crossOriginIsolated.log('Total: ', sum)
+crossOriginIsolated.log('Total: ', sum) 
+
+const cars: string[] = ['Toyota', 'Honda', 'Suzuki', 'Yamaha', 'Mazda', 'BYD']
+
+for (let i = 0; i < cars.length; i++) {
+    console.log(cars[i])
+}
+
+const cars: string[] = ['Toyota', 'Honda', 'Suzuki', 'Yamaha', 'Mazda'] 
+for (let i = 0; i < cars.length; i++) {
+    if (cars[i] === 'Yamaha') {
+        console.log('รถซื้อแกง จะไปแรงได้ไง')
+    }
+}
+
+
+console.log(cars.includes('BYD'))
+
+const str: string = 'Forth'
+
