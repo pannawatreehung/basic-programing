@@ -36,15 +36,23 @@ for (let i = 0; i < cars.length; i++) {
     console.log(cars[i])
 }
 
-const cars: string[] = ['Toyota', 'Honda', 'Suzuki', 'Yamaha', 'Mazda'] 
-for (let i = 0; i < cars.length; i++) {
-    if (cars[i] === 'Yamaha') {
-        console.log('รถซื้อแกง จะไปแรงได้ไง')
-    }
-}
-
 
 console.log(cars.includes('BYD'))
 
 const str: string = 'Forth'
 
+const Yakiniku: string[] = ['Ale', 'Pim', 'View', 'Tare', 'Ink']
+for (let i = 0; i < Yakiniku.length; i++) {
+    if (Yakiniku[i] === 'Pim') {
+        console.log('ไปกินหมูกระทะกัน')
+    }
+}
+
+const lek: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+for (let i = 0; i <= 10; i++) {
+    if (lek[i] === 3 || lek[i] === 5 || lek[i] === 7) {
+        lek[i] = 0
+    }
+}
+
+console.log(lek)
