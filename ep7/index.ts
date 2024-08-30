@@ -37,7 +37,7 @@ const me = {
     lastName: 'Reehung',
     age: 19,
     gender: male,
-    phoneNumber: "0909768071",
+    phoneNumber: "0909778777",
     address: 'Mukdahan Thailand',
 }
 console.log (me)
