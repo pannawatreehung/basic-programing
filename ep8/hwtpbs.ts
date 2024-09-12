@@ -476,7 +476,8 @@ const languageThai = news.results.filter(function (element, index) {
         title: element.title,
         description: element.description,
         source_id: element.source_id,
-        image_url: element.image_url
+        image_url: element.image_url,
+        link: element.link
 
     })
 })
