@@ -1,11 +1,11 @@
-//zane.com -> No
-//tan@ -> No 
-//safe@utk.ac.th -> Yes
-//poppy@gmail.com -> Yes
+//กฏการเข้ารหัส
+//เปลี่ยน u เป็น +
+//เปลี่ยน 6 เป็น *
+//เปลี่ยนเลข 0 เป็น ^
 const database = [
     {
         email: 'user@gmail.com',
-        password:'loveYou3000'
+        password:'loveYo+3^^^'
     },
     {
         email: 'max@gmail.com',
@@ -13,13 +13,19 @@ const database = [
     }
 ]
 
+function decryptPassword(password: string) {
+    return password.replaceAll('+', 'u').replaceAll('*', '6').replaceAll('^', '0')
+}
+
 function login(email: string, password: string) {
     const user = database.filter(function(element, index) {
         return element.email === email
     })
     if (user.length > 0)  {
-        if (user[0].password === password) {
-            alert('เข้าสู่ระบบสำเร็จ ยินดีต้อนรับ')
+        const realPassword = decryptPassword(user[0].password)
+        
+        if (realPassword === password) {
+            alert('เข้าสู่ระบบ ยินดีต้อนรับ')
         } else {
             alert('รหัสผ่านไม่ถูกต้องโปรดตรวจสอบ')
         }
